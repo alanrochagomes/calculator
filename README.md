@@ -1,70 +1,123 @@
-# Getting Started with Create React App
+<!-- ```markdown
+# Calculadora em React com Styled Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Calculadora](https://via.placeholder.com/400x300.png?text=Calculadora+React)  
+*(Imagem ilustrativa da calculadora)*
 
-## Available Scripts
+## Descrição do Projeto -->
 
-In the project directory, you can run:
+### Este projeto é uma calculadora simples desenvolvida utilizando **React** para a estruturação dos componentes e **Styled Components** para a estilização. A calculadora realiza operações básicas como adição, subtração, multiplicação e divisão, além de incluir funcionalidades como limpar o visor e calcular porcentagens.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Operações básicas:** Adição, subtração, multiplicação e divisão.
+- **Limpar visor:** Botão para resetar o visor da calculadora.
+- **Porcentagem:** Calcula a porcentagem de um número.
+- **Interface responsiva:** Design adaptável para diferentes tamanhos de tela.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias Utilizadas
 
-### `npm test`
+- **[React](https://reactjs.org/):** Biblioteca JavaScript para construção de interfaces de usuário.
+- **[Styled Components](https://styled-components.com/):** Biblioteca para estilizar componentes React com CSS-in-JS.
+<!-- **[React Icons](https://react-icons.github.io/react-icons/):** Biblioteca de ícones para React.
+- **[Vite](https://vitejs.dev/):** Ferramenta de build rápida para projetos modernos. -->
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como Rodar o Projeto Localmente
 
-### `npm run build`
+Siga os passos abaixo para rodar o projeto no seu ambiente local:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Pré-requisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js instalado (versão 16.x ou superior).
+- NPM ou Yarn instalado.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Passos
 
-### `npm run eject`
+1. Clone o repositório:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Acesse a pasta do projeto:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   cd nome-do-repositorio
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Instale as dependências:
 
-## Learn More
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Inicie o servidor de desenvolvimento:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   # ou
+   yarn start
+   ```
 
-### Code Splitting
+5. acesse:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```
+   http://localhost:3000
+   ```
 
-### Analyzing the Bundle Size
+## Estrutura do Projeto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Aqui está uma visão geral da estrutura de pastas do projeto:
 
-### Making a Progressive Web App
+```
+src/
+├── components/       # Componentes React
+│   ├── Button.jsx    # Componente de botão
+│   ├── Display.jsx   # Componente do visor da calculadora
+│   └── Calculator.jsx # Componente principal da calculadora
+├── styles/           # Estilos com Styled Components
+│   ├── GlobalStyles.js # Estilos globais
+│   └── theme.js      # Tema de cores (opcional)
+├── App.jsx           # Componente raiz
+└── main.jsx          # Ponto de entrada do React
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- ## Exemplo de Código
 
-### Advanced Configuration
+Aqui está um exemplo de como um componente pode ser estilizado com Styled Components:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```javascript
+import styled from 'styled-components';
 
-### Deployment
+const Button = styled.button`
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.secondary};
+  }
+`;
 
-### `npm run build` fails to minify
+export default Button;
+``` -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contribuição
+
+Contribuições são bem-vindas! Se você quiser contribuir para este projeto, siga os passos abaixo:
+
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`).
+4. Faça um push para a branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
