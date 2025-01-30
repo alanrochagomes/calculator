@@ -1,7 +1,13 @@
-function App() {
-  return (
-   <div className="App">Olá React!</div>
-  );
-}
+import {Container, Content} from './styles';
 
+const App = () => {
+  return (
+    <Container>
+      <Content>
+        Test
+      </Content>
+    </Container>
+  );
+
+}
 export default App;
