@@ -1,10 +1,11 @@
+import Input from "./components/Input";
 import {Container, Content} from './styles';
 
 const App = () => {
   return (
     <Container>
       <Content>
-        Test
+        <Input />
       </Content>
     </Container>
   );
